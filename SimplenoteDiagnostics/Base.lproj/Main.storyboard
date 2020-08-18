@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.2"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -731,12 +732,25 @@
                                         <progressIndicator wantsLayer="YES" maxValue="100" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="2w9-x9-VwK">
                                             <rect key="frame" x="20" y="23" width="16" height="16"/>
                                         </progressIndicator>
+                                        <button translatesAutoresizingMaskIntoConstraints="NO" id="oe4-zp-NkO">
+                                            <rect key="frame" x="826" y="368" width="32" height="32"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="32" id="5Vp-8F-ggs"/>
+                                                <constraint firstAttribute="height" constant="32" id="yBq-ul-IY3"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="icon_simplenote" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ikJ-de-FCP">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="2w9-x9-VwK" firstAttribute="leading" secondItem="0Wx-2g-yeh" secondAttribute="leading" constant="20" id="8fQ-rT-GRl"/>
                                         <constraint firstAttribute="trailing" secondItem="x0B-ki-lIP" secondAttribute="trailing" constant="20" id="AW7-IO-mK4"/>
+                                        <constraint firstAttribute="trailing" secondItem="oe4-zp-NkO" secondAttribute="trailing" constant="20" id="D4F-aa-4LV"/>
                                         <constraint firstAttribute="bottom" secondItem="2w9-x9-VwK" secondAttribute="bottom" constant="23" id="LGf-kn-32g"/>
                                         <constraint firstItem="x0B-ki-lIP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2w9-x9-VwK" secondAttribute="trailing" constant="8" symbolic="YES" id="ovG-tk-bjR"/>
+                                        <constraint firstItem="oe4-zp-NkO" firstAttribute="top" secondItem="0Wx-2g-yeh" secondAttribute="top" constant="20" id="p7L-tZ-5u5"/>
                                         <constraint firstAttribute="bottom" secondItem="x0B-ki-lIP" secondAttribute="bottom" constant="20" id="vtX-vZ-wSr"/>
                                     </constraints>
                                 </view>
@@ -778,29 +792,15 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button translatesAutoresizingMaskIntoConstraints="NO" id="oe4-zp-NkO">
-                                <rect key="frame" x="828" y="378" width="32" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="32" id="5Vp-8F-ggs"/>
-                                    <constraint firstAttribute="height" constant="32" id="yBq-ul-IY3"/>
-                                </constraints>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="icon_simplenote" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ikJ-de-FCP">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="ECD-99-csd" secondAttribute="bottom" id="1AS-xz-0SY"/>
                             <constraint firstAttribute="bottom" secondItem="dsu-bM-azq" secondAttribute="bottom" constant="55" id="2Ch-QE-CxI"/>
                             <constraint firstItem="ECD-99-csd" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="5OH-ek-Kh1"/>
-                            <constraint firstAttribute="trailing" secondItem="oe4-zp-NkO" secondAttribute="trailing" constant="20" id="7Ih-oR-eUg"/>
                             <constraint firstAttribute="trailing" secondItem="dsu-bM-azq" secondAttribute="trailing" constant="20" id="9l2-4O-1A5"/>
-                            <constraint firstItem="oe4-zp-NkO" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="12" id="FRJ-Zj-HW8"/>
                             <constraint firstItem="dsu-bM-azq" firstAttribute="top" secondItem="mWO-XN-0fJ" secondAttribute="bottom" constant="15" id="Ic4-ul-e05"/>
                             <constraint firstItem="mWO-XN-0fJ" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="40" id="YRQ-s5-pFB"/>
                             <constraint firstAttribute="trailing" secondItem="ECD-99-csd" secondAttribute="trailing" id="brf-w3-jZ5"/>
-                            <constraint firstItem="oe4-zp-NkO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mWO-XN-0fJ" secondAttribute="trailing" constant="8" symbolic="YES" id="ek9-r8-b2B"/>
                             <constraint firstItem="mWO-XN-0fJ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="fmH-1t-aFq"/>
                             <constraint firstItem="ECD-99-csd" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="hI8-4H-oZl"/>
                             <constraint firstItem="dsu-bM-azq" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="kt4-LU-PUe"/>
