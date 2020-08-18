@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		B5AEB75A24EC2ED80087AC77 /* SimplenoteSecrets */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B5AEB75B24EC2ED80087AC77 /* Build configuration list for PBXAggregateTarget "SimplenoteSecrets" */;
+			buildPhases = (
+				B5AEB75E24EC2EE40087AC77 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = SimplenoteSecrets;
+			productName = SimplenoteSecrets;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		B5AEB74824EC223A0087AC77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AEB74724EC223A0087AC77 /* AppDelegate.swift */; };
+		B5AEB74A24EC223A0087AC77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AEB74924EC223A0087AC77 /* ViewController.swift */; };
+		B5AEB74C24EC223B0087AC77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5AEB74B24EC223B0087AC77 /* Assets.xcassets */; };
+		B5AEB74F24EC223B0087AC77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5AEB74D24EC223B0087AC77 /* Main.storyboard */; };
+		B5AEB75924EC28EA0087AC77 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B5AEB75824EC28EA0087AC77 /* Alamofire */; };
+		B5AEB76324EC2FB50087AC77 /* SPCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AEB76224EC2FB50087AC77 /* SPCredentials.swift */; };
+		B5AEB76624EC2FE00087AC77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AEB76524EC2FE00087AC77 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5AEB76024EC2F3D0087AC77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5AEB73C24EC223A0087AC77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5AEB75A24EC2ED80087AC77;
+			remoteInfo = SimplenoteSecrets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B5AEB74424EC223A0087AC77 /* SimplenoteDiagnostics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplenoteDiagnostics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5AEB74724EC223A0087AC77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5AEB74924EC223A0087AC77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5AEB74B24EC223B0087AC77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5AEB74E24EC223B0087AC77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5AEB75024EC223B0087AC77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5AEB75124EC223B0087AC77 /* SimplenoteDiagnostics.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimplenoteDiagnostics.entitlements; sourceTree = "<group>"; };
+		B5AEB76224EC2FB50087AC77 /* SPCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPCredentials.swift; sourceTree = "<group>"; };
+		B5AEB76524EC2FE00087AC77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5AEB74124EC223A0087AC77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AEB75924EC28EA0087AC77 /* Alamofire in Frameworks */,
+				B5AEB76624EC2FE00087AC77 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5AEB73B24EC223A0087AC77 = {
+			isa = PBXGroup;
+			children = (
+				B5AEB74624EC223A0087AC77 /* SimplenoteDiagnostics */,
+				B5AEB74524EC223A0087AC77 /* Products */,
+				B5AEB76424EC2FE00087AC77 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B5AEB74524EC223A0087AC77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5AEB74424EC223A0087AC77 /* SimplenoteDiagnostics.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5AEB74624EC223A0087AC77 /* SimplenoteDiagnostics */ = {
+			isa = PBXGroup;
+			children = (
+				B5AEB75F24EC2EF80087AC77 /* Credentials */,
+				B5AEB74724EC223A0087AC77 /* AppDelegate.swift */,
+				B5AEB74924EC223A0087AC77 /* ViewController.swift */,
+				B5AEB74B24EC223B0087AC77 /* Assets.xcassets */,
+				B5AEB74D24EC223B0087AC77 /* Main.storyboard */,
+				B5AEB75024EC223B0087AC77 /* Info.plist */,
+				B5AEB75124EC223B0087AC77 /* SimplenoteDiagnostics.entitlements */,
+			);
+			path = SimplenoteDiagnostics;
+			sourceTree = "<group>";
+		};
+		B5AEB75F24EC2EF80087AC77 /* Credentials */ = {
+			isa = PBXGroup;
+			children = (
+				B5AEB76224EC2FB50087AC77 /* SPCredentials.swift */,
+			);
+			path = Credentials;
+			sourceTree = "<group>";
+		};
+		B5AEB76424EC2FE00087AC77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5AEB76524EC2FE00087AC77 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5AEB74324EC223A0087AC77 /* SimplenoteDiagnostics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5AEB75424EC223B0087AC77 /* Build configuration list for PBXNativeTarget "SimplenoteDiagnostics" */;
+			buildPhases = (
+				B5AEB74024EC223A0087AC77 /* Sources */,
+				B5AEB74124EC223A0087AC77 /* Frameworks */,
+				B5AEB74224EC223A0087AC77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5AEB76124EC2F3D0087AC77 /* PBXTargetDependency */,
+			);
+			name = SimplenoteDiagnostics;
+			packageProductDependencies = (
+				B5AEB75824EC28EA0087AC77 /* Alamofire */,
+			);
+			productName = SimplenoteDiagnostics;
+			productReference = B5AEB74424EC223A0087AC77 /* SimplenoteDiagnostics.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5AEB73C24EC223A0087AC77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = A8C;
+				TargetAttributes = {
+					B5AEB74324EC223A0087AC77 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					B5AEB75A24EC2ED80087AC77 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = B5AEB73F24EC223A0087AC77 /* Build configuration list for PBXProject "SimplenoteDiagnostics" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5AEB73B24EC223A0087AC77;
+			packageReferences = (
+				B5AEB75724EC28EA0087AC77 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = B5AEB74524EC223A0087AC77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5AEB74324EC223A0087AC77 /* SimplenoteDiagnostics */,
+				B5AEB75A24EC2ED80087AC77 /* SimplenoteSecrets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5AEB74224EC223A0087AC77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AEB74C24EC223B0087AC77 /* Assets.xcassets in Resources */,
+				B5AEB74F24EC223B0087AC77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5AEB75E24EC2EE40087AC77 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SOURCE_PATH=~/.mobile-secrets/macOS/simplenote/SPCredentials.swift\nTARGET_FOLDER=${SRCROOT}/SimplenoteDiagnostics/Credentials\nTARGET_PATH=${TARGET_FOLDER}/SPCredentials.swift\n\nif [ ! -f ${SOURCE_PATH} ]; then\n    echo \"Unable to Copy Credentials =(\"\nelse\n    echo \"Copying Credentials... ${TARGET_FOLDER}\"\n    mkdir -p ${TARGET_FOLDER}\n    cp ${SOURCE_PATH} ${TARGET_PATH}\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5AEB74024EC223A0087AC77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AEB74A24EC223A0087AC77 /* ViewController.swift in Sources */,
+				B5AEB76324EC2FB50087AC77 /* SPCredentials.swift in Sources */,
+				B5AEB74824EC223A0087AC77 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5AEB76124EC2F3D0087AC77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5AEB75A24EC2ED80087AC77 /* SimplenoteSecrets */;
+			targetProxy = B5AEB76024EC2F3D0087AC77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5AEB74D24EC223B0087AC77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5AEB74E24EC223B0087AC77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5AEB75224EC223B0087AC77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5AEB75324EC223B0087AC77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B5AEB75524EC223B0087AC77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimplenoteDiagnostics/SimplenoteDiagnostics.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SimplenoteDiagnostics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.a8c.SimplenoteDiagnostics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B5AEB75624EC223B0087AC77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimplenoteDiagnostics/SimplenoteDiagnostics.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SimplenoteDiagnostics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.a8c.SimplenoteDiagnostics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B5AEB75C24EC2ED80087AC77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B5AEB75D24EC2ED80087AC77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5AEB73F24EC223A0087AC77 /* Build configuration list for PBXProject "SimplenoteDiagnostics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5AEB75224EC223B0087AC77 /* Debug */,
+				B5AEB75324EC223B0087AC77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5AEB75424EC223B0087AC77 /* Build configuration list for PBXNativeTarget "SimplenoteDiagnostics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5AEB75524EC223B0087AC77 /* Debug */,
+				B5AEB75624EC223B0087AC77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5AEB75B24EC2ED80087AC77 /* Build configuration list for PBXAggregateTarget "SimplenoteSecrets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5AEB75C24EC2ED80087AC77 /* Debug */,
+				B5AEB75D24EC2ED80087AC77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B5AEB75724EC28EA0087AC77 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B5AEB75824EC28EA0087AC77 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5AEB75724EC28EA0087AC77 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B5AEB73C24EC223A0087AC77 /* Project object */;
+}
